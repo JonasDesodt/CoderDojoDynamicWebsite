@@ -1,6 +1,16 @@
 <?php
 
-$language = $_REQUEST['lang'] ?? 'en';
+// Get the URL path, e.g., '/nl/about'
+$uri = $_SERVER['REQUEST_URI'];
+
+// Remove the query string (if any)
+$uri = strtok($uri, '?');
+
+// Split the URI into parts
+$uriParts = explode('/', trim($uri, '/'));
+
+// The first part of the URI is your locale (in this case, 'nl')
+$locale = $uriParts[0];
 
 switch ($_SERVER['REQUEST_URI']) {
     case '/':

@@ -1,0 +1,82 @@
+/* https://company-51033.frontify.com/d/E6KNDhunr9mR/coderdojo-style-guide-1460385526#/branding/coderdojo-brand */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family:  'Lato', sans-serif;
+    font-size: 14px;
+    min-height: 100vh;
+}
+
+body > footer {
+    padding: 1em;
+}
+
+body > header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em 1em;
+}
+
+body > main {
+    flex-grow: 1;
+    padding: 1em;
+}
+
+body > header > a > img {
+    max-width: 100%;
+}
+
+body > header > ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+}
+
+body > header > ul > li > a {
+    text-decoration: none;
+}
+    
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    body > footer {
+        padding: 1em 10%;
+    }
+
+    body > header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1em 10%;
+    }
+
+    body > header > a {
+        position: relative;
+    }
+
+    body > header > a > img {
+        max-width: 12em;
+    }
+    
+    body > header > ul {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    body > main {
+        padding: 1em 10%;
+    }
+}
+
+
